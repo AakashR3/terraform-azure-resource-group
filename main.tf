@@ -13,4 +13,6 @@ resource "azurerm_resource_group" "test" {
     # Team        = var.team_tag
     # Environment = "dev"
     # Creator     = var.creator
+}
+}
 
