@@ -1,11 +1,16 @@
-resource "azurerm_resource_group" "az_rg" {
-  name     = var.name
-  location = var.location
+provider "azurerm" {
+  features {
 
-  tags = {
-    Region      = var.location
-    Team        = var.team_tag
-    Environment = var.env
-    Creator     = var.creator
   }
 }
+
+resource "azurerm_resource_group" "test" {
+  name     = "testing-tf"
+  location = "Central US"
+
+  tags = {
+    Region      = "Central US"
+    # Team        = var.team_tag
+    # Environment = "dev"
+    # Creator     = var.creator
+
