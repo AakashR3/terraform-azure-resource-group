@@ -1,6 +1,6 @@
 provider "azurerm" {
   features {
-  azurerm_cli_executable = "/usr/bin/az"
+  #azurerm_cli_executable = "/usr/bin/az"
   }
 }
 resource "azurerm_resource_group" "test" {
